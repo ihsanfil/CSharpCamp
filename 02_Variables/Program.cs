@@ -170,11 +170,11 @@ namespace _02_Variables
 
             #region Klavyeden Karakter Girişleri
 
-            //char gender;
-            //Console.Write("Lütfen cinsiyet seçiniz: ");
-            //gender = char.Parse(Console.ReadLine());
+            char gender;
+            Console.Write("Lütfen cinsiyet seçiniz: ");
+            gender = char.Parse(Console.ReadLine());
 
-            //Console.WriteLine("Seçtiğiniz Cinsiyet: " + gender);
+            Console.WriteLine("Seçtiğiniz Cinsiyet: " + gender);
 
             #endregion
 
