@@ -17,6 +17,7 @@ namespace CSharpCamp301.EFProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmStatistics());
+
         }
     }
 }
