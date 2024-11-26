@@ -1,7 +1,7 @@
 
 # **Proje Başlığı**
 
-![Coding Environment](https://i.hizliresim.com/f08g1gu.JPG)
+![Coding Environment](https://i.hizliresim.com/filn8w4.JPG)
 
 ---
 
