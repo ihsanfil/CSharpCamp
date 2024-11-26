@@ -18,6 +18,7 @@ namespace _10_DatabaseCrud
 
             //Console.WriteLine("--------------------------------------------------------------------");
 
+
             #region ADD CATEGORY | KATEGORİ EKLEME
 
             //Console.Write("Eklemek istediğiniz kategori Adı: ");
