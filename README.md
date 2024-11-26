@@ -8,65 +8,65 @@
 ## 101 - C# Temelleri
 
 ### 📝 **1. Giriş, Merhaba Dünya, Yazdırma Komutları, String ve Int Değişkenler**  
-C# diline giriş yaparak "Merhaba Dünya", yazdırma komutları ve String, Int gibi temel veri türlerini öğreneceksiniz.
+Bu eğitimde, C# diline giriş yapılarak "Merhaba Dünya" uygulaması geliştirildi, yazdırma komutları kullanıldı ve String, Int gibi temel veri türlerinin nasıl çalıştığı incelendi.
 
 ### 🔢 **2. String, Int, Double, Char Değişkenler, Klavye Veri Girişleri, Dönüşümler**  
-String, Int, Double, Char gibi farklı veri türlerini, kullanıcıdan veri girişini ve tür dönüşümlerini keşfedeceksiniz.
+String, Int, Double, Char gibi farklı veri türleri ile kullanıcıdan veri girişi yapıldı ve tür dönüşümleri hakkında uygulamalı örnekler gerçekleştirildi.
 
 ### ⚡ **3. Karar Yapıları, If Else, Switch Case, Break**  
-C# dilinde if-else, switch-case ve break komutlarıyla karar yapıları hakkında bilgi edineceksiniz.
+Bu eğitimde, if-else, switch-case ve break komutları kullanılarak karar yapıları uygulandı ve bu yapılar ile çeşitli problemler çözüldü.
 
 ### 🔄 **4. Döngüler, For, While**  
-C# dilindeki for döngüsü, while döngüsü gibi döngü yapılarının kullanımını öğrenip, uygulamalı örnekler yapacaksınız.
+For ve While döngüleri ile çeşitli algoritmalar oluşturuldu, döngü yapılarının nasıl çalıştığı ve hangi durumlarda tercih edildiği uygulamalı olarak incelendi.
 
 ### 🌟 **5. Döngülerle Pratik Uygulamalar, Yıldızlarla Şekil Çizme**  
-Döngülerle pratik uygulamalar yaparak yıldızlarla şekiller çizmeyi öğreneceksiniz.
+Döngülerle pratik uygulamalar yaparak, yıldızlarla şekiller çizildi ve bu teknikle döngülerin işleyişi pekiştirildi.
 
 ### 📊 **6. Diziler**  
-C# dilinde dizilerle çalışma, dizileri tanımlama, erişme ve manipüle etme işlemleri hakkında bilgi edineceksiniz.
+Dizilerle çalışma, dizileri tanımlama, erişme ve manipüle etme işlemleri uygulamalı olarak incelendi. Ayrıca, dizilerde veri yönetimi üzerine örnekler yapıldı.
 
 ### 🔁 **7. Foreach Döngüsü**  
-Foreach döngüsü ile koleksiyonlar üzerinde nasıl döngü yapılır öğrenilecek.
+Foreach döngüsü kullanılarak koleksiyonlar üzerinde işlem yapıldı, özellikle koleksiyonlarla yapılan döngülerin nasıl daha verimli çalıştığı incelendi.
 
 ---
 
 ## 201 - Veritabanı ve Metotlar
 
 ### ⚙️ **8. Metotlar**  
-C# dilinde modüler ve yeniden kullanılabilir kod yazmak için metotlar oluşturmayı öğreneceksiniz.
+Bu eğitimde, modüler ve yeniden kullanılabilir kod yazmak için metotlar oluşturuldu, metotların nasıl çalıştığı ve doğru kullanımına dair örnekler yapıldı.
 
 ### 🗃️ **9. SQL Veri Tabanı ve Tablo Oluşturma & C# Kısmına Bağlama**  
-SQL veritabanı ve tablolar oluşturup, bunları C# uygulamanıza nasıl bağlayacağınızı keşfedeceksiniz.
+SQL veritabanı ve tablolar oluşturuldu, ardından bu veritabanı C# uygulaması ile bağlanarak veri üzerinde işlem yapıldı.
 
 ---
 
 ## 301 - Gelişmiş C# ve Entity Framework
 
 ### 🔧 **10. C# ile SQL Listeleme Ekleme Güncelleme ve Silme İşlemleri**  
-C# ve SQL kullanarak CRUD (Create, Read, Update, Delete) işlemleri gerçekleştirmeyi öğreneceksiniz.
+C# ve SQL kullanarak CRUD (Create, Read, Update, Delete) işlemleri gerçekleştirildi, veritabanı ile etkileşimde kullanılan SQL sorguları derinlemesine incelendi.
 
 ### 🏗️ **11. OOP Modülü: C# ile N Katmanlı Mimari Entity Layer**  
-N katmanlı mimariyi Entity Framework ile nasıl oluşturacağınızı ve OOP'yi kullanmayı öğreneceksiniz.
+N katmanlı mimari kullanılarak Entity Framework ile projeler oluşturuldu, yazılım geliştirme süreçlerinde OOP prensipleri uygulandı.
 
 ### 🛠️ **12. OOP Modülü: Data Access Katmanı ve Context Sınıfı**  
-Veri erişim katmanı ve Entity Framework'teki Context sınıfıyla çalışmayı öğreneceksiniz.
+Veri erişim katmanı oluşturuldu, Entity Framework'teki Context sınıfı ile veritabanı işlemleri gerçekleştirildi ve bu yapı üzerinde çalışmalar yapıldı.
 
 ### 📦 **13. OOP Modülü: Migration İşlemleri ve Abstract Interfaceler**  
-Entity Framework migration işlemleri ve abstract sınıflar, interface kullanımını keşfedeceksiniz.
+Migration işlemleri yapıldı, abstract sınıflar ve interface kullanımı ile daha esnek ve sürdürülebilir kod yapıları oluşturuldu.
 
 ### 🗂️ **14. Orm Yapısı: Entity Framework DbFirst ve Model Oluşturma**  
-DbFirst yaklaşımıyla Entity Framework kullanarak ORM yapısını oluşturmayı ve model yapılarıyla çalışmayı öğreneceksiniz.
+DbFirst yaklaşımıyla Entity Framework kullanılarak ORM yapısı kuruldu, veri tabanı ile ilişkili modeller oluşturuldu.
 
 ### 📈 **15. Entity Framework Metotları ile Proje Uygulaması**  
-Entity Framework metotlarını kullanarak bir proje uygulaması gerçekleştireceksiniz.
+Entity Framework metotları kullanarak gerçek bir proje uygulaması geliştirildi ve metotlarla veritabanı yönetimi yapıldı.
 
 ### 🌍 **16. Entity Framework: Tur Projesi Location İşlemleri**  
-Entity Framework ile tur projelerinde konum işlemleri gerçekleştirmeyi öğreneceksiniz.
+Entity Framework ile tur projelerinde konum işlemleri yapıldı, veritabanındaki veriler üzerinde kapsamlı işlemler gerçekleştirildi.
 
 ### 🔍 **17. Entity Framework Metotları ve Linq Sorgular**  
-Entity Framework metotları ve LINQ sorguları ile verileri manipüle etmeyi öğreneceksiniz.
+LINQ sorguları ve Entity Framework metotları kullanılarak verilerin sorgulanması ve manipülasyonu üzerine örnekler yapıldı.
 
 ### 🧩 **18. EntityState Komutları, Generic Repository Sınıfı ve Ef Sınıfları**  
-EntityState komutları, Generic Repository sınıfı ve EF sınıflarını kullanarak gelişmiş Entity Framework özelliklerini keşfedeceksiniz.
+EntityState komutları, Generic Repository sınıfı ve EF sınıflarını kullanarak gelişmiş Entity Framework özellikleri üzerine detaylı çalışmalar yapıldı.
 
 ---
