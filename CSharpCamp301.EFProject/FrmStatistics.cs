@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,8 +26,12 @@ namespace CSharpCamp301.EFProject
             lblLocationCount.Text = locationCount.ToString();
             lblSumCapacity.Text = db.Location.Sum(x=>x.Capacity).ToString();
             lblGuidCount.Text = db.Guid.Count().ToString();
-            lblAvgCapacity.Text = db.Location.Average(x=>x.Capacity).ToString();
-            lblAvgLocationPrice.Text = db.Location.Average(x=>x.Price).ToString()+ "TL";
+            
+            lblAvgCapacity.Text = ((double)db.Location.Average(x => x.Capacity)).ToString("F2");
+            //Ortalama tur fiyatı
+            var avgLocationPrice = ((double)db.Location.Average(x => x.Price)).ToString("C2", new CultureInfo("tr-TR"));
+            lblAvgLocationPrice.Text = avgLocationPrice;
+           
             int lastCountryId = db.Location.Max(x => x.LocationId);
             lblLastCountryName.Text = db.Location.Where(x => x.LocationId == lastCountryId).Select(x => x.Country).FirstOrDefault();
             lblCappadociaLocationCapacity.Text = db.Location.Where(x => x.City == "Kapadokya").Select(x => x.Capacity).FirstOrDefault().ToString();
@@ -47,6 +52,11 @@ namespace CSharpCamp301.EFProject
         }
 
         private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAvgLocationPrice_Click(object sender, EventArgs e)
         {
 
         }

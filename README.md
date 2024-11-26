@@ -1,7 +1,7 @@
 
 # **Proje Başlığı**
 
-![Coding Environment](path_to_your_image.png)
+![Coding Environment](https://i.hizliresim.com/f08g1gu.JPG)
 
 ---
 
