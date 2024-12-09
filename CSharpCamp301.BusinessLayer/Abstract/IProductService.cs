@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpCamp301.DataAccessLayer.Abstract
+namespace CSharpCamp301.BusinessLayer.Abstract
 {
-    public interface ICustomerDal: IGenericDal<Customer>
+    public interface IProductService : IGenericService<Product>
     {
-  
     }
 }

@@ -9,7 +9,11 @@ using System.Threading.Tasks;
 
 namespace CSharpCamp301.DataAccessLayer.EntityFramework
 {
-    public class EfCustomerDal: GenericRepository<Customer>,ICustomerDal
+    public class EfCustomerDal : GenericRepository<Customer>, ICustomerDal
     {
+        public List<Customer> GetList()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
