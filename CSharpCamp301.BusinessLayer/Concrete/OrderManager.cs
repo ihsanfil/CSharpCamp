@@ -1,4 +1,5 @@
 ﻿using CSharpCamp301.BusinessLayer.Abstract;
+using CSharpCamp301.DataAccessLayer.Abstract;
 using CSharpCamp301.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,29 +11,36 @@ namespace CSharpCamp301.BusinessLayer.Concrete
 {
     public class OrderManager : IOrderService
     {
-        public void TDelete(Order entity)
+        private readonly IOrderDal _orderDal;
+
+        public OrderManager(IOrderDal orderDal)
         {
-            throw new NotImplementedException();
+            _orderDal = orderDal;
+        }
+
+        public void TDelete(Order t)
+        {
+            _orderDal.Delete(t);
         }
 
         public List<Order> TGetAll()
         {
-            throw new NotImplementedException();
+            return _orderDal.GetAll();
         }
 
         public Order TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _orderDal.GetById(id);
         }
 
-        public void TInsert(Order entity)
+        public void TInsert(Order t)
         {
-            throw new NotImplementedException();
+            _orderDal.Insert(t);
         }
 
-        public void TUpdate(Order entity)
+        public void TUpdate(Order t)
         {
-            throw new NotImplementedException();
+            _orderDal.Update(t);
         }
     }
 }
