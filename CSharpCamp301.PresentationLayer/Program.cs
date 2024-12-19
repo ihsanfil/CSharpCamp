@@ -17,6 +17,7 @@ namespace CSharpCamp301.PresentationLayer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmProduct());
+            //Application.Run(new FrmCategory());
         }
     }
 }
