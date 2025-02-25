@@ -11,7 +11,8 @@ namespace FinancialCrm
         {
             InitializeComponent();
         }
-        FinancialCrmDbEntities db = new FinancialCrmDbEntities();
+        //FinancialCrmDbEntities db = new FinancialCrmDbEntities();
+        private ApplicationDbContext db = new ApplicationDbContext();
         private void FrmBanks_Load(object sender, EventArgs e)
         {
             //banka bakiyeleri
@@ -26,7 +27,7 @@ namespace FinancialCrm
 
             //banka hareketleri
             var bankProcess1 = db.BankProcesses.OrderByDescending(x => x.BankProcessId).Take(1).FirstOrDefault();
-            lblBankProcess1.Text = bankProcess1.Description+" "+bankProcess1.Amount+" "+bankProcess1.ProcessDate;
+            lblBankProcess1.Text = bankProcess1.Description + " " + bankProcess1.Amount + " " + bankProcess1.ProcessDate;
 
             var bankProcess2 = db.BankProcesses.OrderByDescending(x => x.BankProcessId).Take(2).Skip(1).FirstOrDefault();
             lblBankProcess2.Text = bankProcess2.Description + " " + bankProcess2.Amount + " " + bankProcess2.ProcessDate;
@@ -52,6 +53,11 @@ namespace FinancialCrm
             FrmBilldig frmBilldig = new FrmBilldig();
             frmBilldig.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

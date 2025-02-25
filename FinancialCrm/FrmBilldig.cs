@@ -20,17 +20,17 @@ namespace FinancialCrm
 
         private void FrmBilldig_Load(object sender, EventArgs e)
         {
-            var values = db.Bills.ToList(); 
-            dataGridView1.DataSource = values;
+            //var values = db.Bills.ToList(); 
+            //dataGridView1.DataSource = values;
 
         }
-        FinancialCrmDbEntities db= new FinancialCrmDbEntities();
+        private ApplicationDbContext db = new ApplicationDbContext();
         private void button10_Click(object sender, EventArgs e)
         {
             string title = txtBillTitle.Text;
             decimal amount = decimal.Parse(txtBillAmount.Text);
             string period = txtBillPeriot.Text;
-            Bills bills = new Bills();
+            Bill bills = new Bill();
             bills.BillTitle = title;
             bills.BillAmount = amount;
             bills.BillPeriod = period;
@@ -38,7 +38,7 @@ namespace FinancialCrm
             db.SaveChanges();
 
             MessageBox.Show("Ödeme başarılı bir şekilde sisteme eklendi", "Ödeme & Faturalar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+
             var values = db.Bills.ToList();
             dataGridView1.DataSource = values;
         }

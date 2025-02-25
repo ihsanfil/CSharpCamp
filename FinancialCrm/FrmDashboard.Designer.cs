@@ -59,8 +59,8 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -251,6 +251,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Bankalar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -281,7 +282,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // chart1
             // 
@@ -325,15 +325,6 @@
             this.panel6.Size = new System.Drawing.Size(362, 50);
             this.panel6.TabIndex = 17;
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Silver;
-            this.panel7.Controls.Add(this.label4);
-            this.panel7.Location = new System.Drawing.Point(675, 237);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(389, 50);
-            this.panel7.TabIndex = 18;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -345,6 +336,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Bankalar ve banka hesaplarındaki para miktarlarına\r\naşağıdaki grafikten ulaşabili" +
     "rsiniz.";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Silver;
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Location = new System.Drawing.Point(675, 237);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(389, 50);
+            this.panel7.TabIndex = 18;
             // 
             // label4
             // 
@@ -374,7 +374,6 @@
             this.Name = "FrmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDashboard";
-            this.Load += new System.EventHandler(this.FrmDashboard_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);

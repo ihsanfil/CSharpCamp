@@ -219,7 +219,7 @@
             this.btnCreateBill.TabIndex = 9;
             this.btnCreateBill.Text = "Yeni Ödeme";
             this.btnCreateBill.UseVisualStyleBackColor = true;
-            this.btnCreateBill.Click += new System.EventHandler(this.button10_Click);
+            //this.btnCreateBill.Click += new System.EventHandler(this.button10_Click);
             // 
             // btnBillList
             // 

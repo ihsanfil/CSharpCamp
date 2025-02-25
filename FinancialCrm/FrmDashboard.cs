@@ -18,7 +18,12 @@ namespace FinancialCrm
             InitializeComponent();
         }
 
-        FinancialCrmDbEntities db = new FinancialCrmDbEntities();
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private ApplicationDbContext db = new ApplicationDbContext();
         int count = 0;
 
         private void FrmDashboard_Load(object sender, EventArgs e)
