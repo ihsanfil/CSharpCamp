@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class SeedDataMigration : DbMigration
+    public partial class newMigrationbillss : DbMigration
     {
         public override void Up()
         {
@@ -72,8 +72,10 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        UserName = c.String(),
-                        Password = c.String(),
+                        Username = c.String(),
+                        PasswordHash = c.String(),
+                        Email = c.String(),
+                        CreatedAt = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             

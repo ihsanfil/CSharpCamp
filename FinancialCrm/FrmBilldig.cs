@@ -17,14 +17,14 @@ namespace FinancialCrm
         {
             InitializeComponent();
         }
-
+        private ApplicationDbContext db = new ApplicationDbContext();
         private void FrmBilldig_Load(object sender, EventArgs e)
         {
-            //var values = db.Bills.ToList(); 
-            //dataGridView1.DataSource = values;
+            var values = db.Bills.ToList();
+            dataGridView1.DataSource = values;
 
         }
-        private ApplicationDbContext db = new ApplicationDbContext();
+
         private void button10_Click(object sender, EventArgs e)
         {
             string title = txtBillTitle.Text;

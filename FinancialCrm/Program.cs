@@ -15,23 +15,17 @@ namespace FinancialCrm
         [STAThread]
         static void Main()
         {
-            // Veritabanını başlatma
             using (var context = new ApplicationDbContext())
             {
                 // Veritabanı varsa işlem yapma
-                context.Database.Initialize(force: false);  // force: false veritabanı varsa yeniden oluşturmaz
+                context.Database.Initialize(force: false);  
             }
 
             // Formu başlatma
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBilldig());
+            Application.Run(new FrmLogin());
         }
-        //static void Main()
-        //{
-        //    Application.EnableVisualStyles();
-        //    Application.SetCompatibleTextRenderingDefault(false);
-        //    Application.Run(new FrmLogin());
-        //}
+      
     }
 }

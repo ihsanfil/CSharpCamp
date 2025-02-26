@@ -40,10 +40,20 @@
 
             // Fatura verilerini ekleyelim
             context.Bills.AddOrUpdate(
-                b => b.BillTitle,
-                new Bill { BillTitle = "Electricity Bill", BillAmount = 150.75m, BillPeriod = "January 2025" },
-                new Bill { BillTitle = "Water Bill", BillAmount = 50.25m, BillPeriod = "January 2025" }
-            );
+                 b => b.BillTitle,
+                 new Bill { BillTitle = "Elektrik Faturası", BillAmount = 150.75m, BillPeriod = "Ocak 2025" },
+                 new Bill { BillTitle = "Elektrik Faturası", BillAmount = 155.00m, BillPeriod = "Şubat 2025" },
+                 new Bill { BillTitle = "Elektrik Faturası", BillAmount = 160.50m, BillPeriod = "Mart 2025" },
+
+                 new Bill { BillTitle = "Doğalgaz Faturası", BillAmount = 200.00m, BillPeriod = "Ocak 2025" },
+                 new Bill { BillTitle = "Doğalgaz Faturası", BillAmount = 210.75m, BillPeriod = "Şubat 2025" },
+
+                 new Bill { BillTitle = "Su Faturası", BillAmount = 50.25m, BillPeriod = "Ocak 2025" },
+                 new Bill { BillTitle = "Su Faturası", BillAmount = 55.50m, BillPeriod = "Şubat 2025" },
+
+                 new Bill { BillTitle = "İnternet Faturası", BillAmount = 100.00m, BillPeriod = "Ocak 2025" },
+                 new Bill { BillTitle = "İnternet Faturası", BillAmount = 105.25m, BillPeriod = "Şubat 2025" }
+             );
 
             // Kategori verilerini ekleyelim
             context.Categories.AddOrUpdate(

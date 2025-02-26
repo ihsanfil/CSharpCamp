@@ -20,13 +20,16 @@ namespace FinancialCrm
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            FrmBanks frmBanks = new FrmBanks();
+            frmBanks.Show();
+            this.Hide();
         }
 
         private ApplicationDbContext db = new ApplicationDbContext();
         int count = 0;
 
-        private void FrmDashboard_Load(object sender, EventArgs e)
+
+        private void FrmDashboard_Load_1(object sender, EventArgs e)
         {
             var totalBalance = db.Banks.Sum(x => x.BankBalance);
             lblTotalBalance.Text = totalBalance.ToString() + " ₺";

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinancialCrm.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,18 +22,36 @@ namespace FinancialCrm
         {
             string userName = txtUserName.Text;
             string password = txtPassword.Text;
-            if (userName =="ihsan" && password == "1234")
-            {
-                MessageBox.Show("Hoş geldiniz.");
 
-                FrmDashboard frmDashboard = new FrmDashboard();
-                frmDashboard.Show();
-                this.Hide();
-            }
-            else
+            if (string.IsNullOrWhiteSpace(userName) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Kullanıcı adı veya şifre hatalı.\nLütfen tekrar deneyin.");
+                MessageBox.Show("Kullanıcı adı ve şifre boş olamaz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
+
+            using (var context = new ApplicationDbContext())
+            {
+                var user = context.Users.FirstOrDefault(u => u.Username == userName);
+
+                if (user != null && BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
+                {
+                    MessageBox.Show("Hoş geldiniz!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FrmDashboard frmDashboard = new FrmDashboard();
+                    frmDashboard.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Kullanıcı adı veya şifre hatalı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            FrmRegister frmRegister = new FrmRegister();
+            frmRegister.Show();
+            this.Hide();
         }
     }
 }

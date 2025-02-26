@@ -7,13 +7,13 @@ namespace FinancialCrm.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class SeedDataMigration : IMigrationMetadata
+    public sealed partial class newMigrationbillss : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SeedDataMigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(newMigrationbillss));
         
         string IMigrationMetadata.Id
         {
-            get { return "202502251623141_SeedDataMigration"; }
+            get { return "202502261151090_newMigrationbillss"; }
         }
         
         string IMigrationMetadata.Source
